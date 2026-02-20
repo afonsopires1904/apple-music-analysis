@@ -25,6 +25,8 @@ keep_cols = ["Name", "Artist", "Album", "Album Artist", "Genre",
 
 df = df[keep_cols]
 
-df = df.sort_values("Play Count", ascending=False)
-print(df.head(5))
+df.to_csv("data/clean_library.csv", index=False, encoding="utf-8-sig")
+
+
+
 
